@@ -1,7 +1,22 @@
+
 let titlessJS = document.querySelector("#titlessJS")
 let text = document.querySelector("#text")
 let dato1 = document.querySelector("#dato1")
 let dato2 = document.querySelector("#dato2")
+
+
+let moon = document.querySelector("#moon")
+let mars = document.querySelector("#mars")
+let europa = document.querySelector("#europa")
+let titan = document.querySelector("#titan")
+
+
+
+
+
+
+
+
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
@@ -18,12 +33,16 @@ const dataFech = async () =>{
            //console.log(e.target.id)
            if(e.target.id === "moon"){
                pintarElementosMoon(data)
+               pintarBarraMoon()
            }else if(e.target.id === "mars"){
                pintarElementosMars(data)
+               pintarBarraMars()
            }else if(e.target.id === "europa"){
                pintarElementosEuropa(data)
+               pintarBarraEuropa()
            }else if (e.target.id === "titan"){
                pintarElementosTitan(data)
+               pintarBarraTitan()
            }else if(e.target.id === "dowglas"){
                pintarDouglas(data)
            }else if(e.target.id === "mark"){
@@ -41,6 +60,7 @@ const dataFech = async () =>{
            }
        })
 
+
     }catch(error){
        console.log("error en destination moon")
     }
@@ -49,7 +69,6 @@ const dataFech = async () =>{
 const pintarElementosMoon = (data) =>{
     //console.log(dataMoon.destinations[1].name)
     titlessJS.textContent = data.destinations[0].name
-    titlessJS.classList.add = "titlesJS"
     text.textContent = data.destinations[0].description
     dato1.textContent = data.destinations[0].distance
     dato2.textContent = data.destinations[0].travel
@@ -86,8 +105,6 @@ const pintarElementosTitan = (data) =>{
 
     document.querySelector("#imagenMoon").setAttribute("src",data.destinations[3].images.png)
 }
-
-
 
 
 
@@ -188,5 +205,36 @@ const pintarCapsule = (data)=>{
 
     document.querySelector("#imagenLaunch").setAttribute("src",data.technology[2].images.portrait)
 }
+
+
+
+
+
+
+const pintarBarraMoon = ()=>{
+    moon.classList.add("activaJS")
+    mars.classList.remove("activaJS")
+    europa.classList.remove("activaJS")
+    titan.classList.remove("activaJS")
+}
+const pintarBarraMars = ()=>{
+    mars.classList.add("activaJS")
+    moon.classList.remove("activaJS")
+    europa.classList.remove("activaJS")
+    titan.classList.remove("activaJS")
+}
+const pintarBarraEuropa = ()=>{
+    europa.classList.add("activaJS")
+    mars.classList.remove("activaJS")
+    moon.classList.remove("activaJS")
+    titan.classList.remove("activaJS")
+}
+const pintarBarraTitan = ()=>{
+    titan.classList.add("activaJS")
+    mars.classList.remove("activaJS")
+    europa.classList.remove("activaJS")
+    moon.classList.remove("activaJS")
+}
+
 
 

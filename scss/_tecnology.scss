@@ -9,8 +9,8 @@
     max-width: 1440px;
     height:100vh;
     margin: auto;
-        background: #031677;
-    padding: 10px 0px;
+    //background: #031677;
+    //padding: 10px 0px;
     .containert{
         padding-top: 150px;
         width: 100%;
@@ -61,11 +61,6 @@
                         text-align: center;
                         color: white;
                         padding-bottom: 10px;
-                        .activet{
-                            //background:green; 
-                            padding-bottom:15px;
-                            box-shadow: 0px 2px 0px white;
-                        }
                         a{
                             text-decoration: none;
                             color: $color_letras2;

@@ -5,17 +5,11 @@
   font-family: Barlow Condensed;
 }
 
-a {
-  text-decoration: none;
-}
-
 .containerBase {
   width: 100%;
   max-width: 1440px;
   height: 100vh;
   margin: auto;
-  background: #0c2ac0;
-  padding: 10px 0px;
 }
 .containerBase .container {
   width: 100%;
@@ -65,10 +59,6 @@ a {
   text-align: center;
   color: white;
   padding-bottom: 10px;
-}
-.containerBase .container .bloqueNav .navEnlaces .barra_ul .barra_li .active {
-  padding-bottom: 15px;
-  box-shadow: 0px 2px 0px white;
 }
 .containerBase .container .bloqueNav .navEnlaces .barra_ul .barra_li a {
   text-decoration: none;
@@ -158,8 +148,6 @@ a {
   max-width: 1440px;
   height: 100vh;
   margin: auto;
-  padding: 10px 0px;
-  background: #0c1f80;
 }
 .containerBased .containerd {
   width: 100%;
@@ -211,10 +199,6 @@ a {
   color: white;
   padding-bottom: 10px;
 }
-.containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld .barra_lid .actived {
-  padding-bottom: 15px;
-  box-shadow: 0px 2px 0px white;
-}
 .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld .barra_lid a {
   text-decoration: none;
   color: #FFFFFF;
@@ -261,7 +245,7 @@ a {
   padding: 10px 0px;
 }
 .containerBased .containerd .cont_destino_description .destination_description .menu {
-  width: 70%;
+  width: 100%;
   padding: 5px 0px;
 }
 .containerBased .containerd .cont_destino_description .destination_description .menu .ul {
@@ -270,18 +254,34 @@ a {
   list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+.containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse {
+  padding: 10px 20px;
 }
 .containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse .link {
   text-decoration: none;
   color: #D0D6F9;
   letter-spacing: 2px;
   font-size: 15px;
+  transition: 0.4s ease-in-out all;
 }
 .containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse .link .activa {
+  transition: 0.4s ease-in-out all;
   width: 100px;
-  box-shadow: 0px 2px 0px #D0D6F9;
+  box-shadow: 0px 2px 0px 0px white;
+  padding: 5px 10px;
+}
+.containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse .link .activaJS {
+  box-shadow: 0px 2px 0px 0px white;
+}
+.containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse .activaJS {
+  padding: 5px 10px;
+  box-shadow: 0px 2px 0px 0px white;
+}
+.containerBased .containerd .cont_destino_description .destination_description .menu .ul .linse_JS {
+  background: red;
 }
 .containerBased .containerd .cont_destino_description .destination_description .cont_description {
   width: 100%;
@@ -365,8 +365,6 @@ a {
   max-width: 1440px;
   height: 100vh;
   margin: auto;
-  padding: 10px 0px;
-  background: #1c3acebd;
 }
 .containerBasec .containerc {
   width: 100%;
@@ -416,10 +414,6 @@ a {
   text-align: center;
   color: white;
   padding-bottom: 10px;
-}
-.containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc .barra_lic .activec {
-  padding-bottom: 15px;
-  box-shadow: 0px 2px 0px white;
 }
 .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc .barra_lic a {
   text-decoration: none;
@@ -527,8 +521,6 @@ a {
   max-width: 1440px;
   height: 100vh;
   margin: auto;
-  background: #031677;
-  padding: 10px 0px;
 }
 .containerBaset .containert {
   padding-top: 150px;
@@ -578,10 +570,6 @@ a {
   text-align: center;
   color: white;
   padding-bottom: 10px;
-}
-.containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit .activet {
-  padding-bottom: 15px;
-  box-shadow: 0px 2px 0px white;
 }
 .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit a {
   text-decoration: none;
