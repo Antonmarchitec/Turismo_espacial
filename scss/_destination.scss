@@ -68,6 +68,12 @@
                     }
                 }
             }
+            .btnResponsive{
+                background: red;
+                width: 50px;
+                height: 50px;
+                display: none;
+            }
         } 
         
         .cont_destino_description{
@@ -250,6 +256,626 @@
                             }
                          }
                          
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerBased{
+        /*width: 100%;
+        max-width: 1440px;
+        height: 100vh;
+        margin: auto;*/
+        //padding: 10px 0px;
+        //background: #0c1f80;
+
+
+        width: 100%;
+        height: 100vh;
+        background: forestgreen;
+        padding: 10px 0px;
+        .containerd{
+            /*width: 100%;
+            height:100%;
+            padding: 10px 0px;
+            background-image: url(../images/destination/background-destination-desktop.jpg);
+            background-size: 100% 100%;*/
+             
+            width: 100%;
+            height: 800px;
+            background-image: url(../images/destination/background-destination-mobile.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            .bloqueNavd{
+                /*position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                top: 25px;
+                left: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.178);*/
+
+                //background-color: aqua;
+                .logod{
+                    width:40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrad{
+                    /*width: 400px;
+                    height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+
+                    width: 100px;
+                }
+                .navEnlacesd{
+                    /*width: 600px;
+                    height: 50px;
+                    margin-right: 20px;
+                    object-fit: cover;*/
+
+                    width: 400px;
+                    //background-color: aqua;
+                    .barra_uld{
+                        /*list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;*/
+                        
+                        .barra_lid{
+                            //background: brown;
+                            /*width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;*/
+                            
+                            a{
+                                /*text-decoration: none;
+                                color: $color_letras2;*/
+                            }
+                        }
+                    }
+                }
+                .btnResponsive{
+                    background: red;
+                    width: 50px;
+                    height: 50px;
+                    display: none;
+                }
+            } 
+            
+            .cont_destino_description{
+                /*margin-top: 100px;
+                width: 90%;
+                padding: 10px 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;*/
+
+                //background: red;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                .cont_destinations{
+                    /*width: 400px;
+                    padding:10px 0px;*/
+
+                    //background: rgb(110, 85, 33);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .destination_title{
+                        //width: 300px;
+                        //background: yellow;
+                        .title{
+                            /*color:$color_letras2;
+                            font-family: Barlow Condensed;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 22px;
+                            line-height: 33.6px;
+                            letter-spacing: 4.72px;
+                            background-color: aqua;*/
+                            .ss{
+                                /*color: $color_letras3;
+                                line-height: 33.6px;
+                                letter-spacing: 4.72px;*/
+                            }
+                        }
+                    }
+            
+                    .destination_figure{
+                        /*width: 320px;
+                        height: 320px;
+                        margin-top: 20px;
+                        margin-left: 100px;*/
+                        width: 200px;
+                        height: 200px;
+                        //background: forestgreen;
+                        margin-left: 0;
+                        #imagenMoon{
+                            /*width: 100%;
+                            height: 100%;*/
+                        }
+                    }
+                }
+    
+                .destination_description{
+                    /*width: 400px;
+                    padding: 10px 0px;*/
+                    //background: grey;
+                    .menu{
+                        width: 100%;
+                        padding: 5px 0px;
+                        //background: rgba(199, 11, 11, 0.418);
+                        .ul{
+                            width: 100%;
+                            padding: 3px 0px;
+                            //background: rgb(255, 0, 0);
+                            list-style: none;
+                            display: flex;
+                            flex-direction:row;
+                            justify-content: space-between;
+                            align-items: center;
+                            .linse{
+                                //padding: 2px 15px;
+                                padding: 10px 20px;
+                                //background: rgb(42, 165, 48);
+                                .link{
+                                    text-decoration: none;
+                                    color: $color_letras;
+                                    letter-spacing: 2px;
+                                    font-size: 15px;
+                                    transition: 0.4s ease-in-out all;
+                                    //background: green;
+                                    .activa{
+                                        transition: 0.4s ease-in-out all;
+                                        width: 100px;
+                                        box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        padding: 5px 10px;
+                                    }
+                                    .activaJS
+                                    {
+                                        //padding: 5px 10px;
+                                        box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        
+                                    } 
+                                }
+                                .activaJS{
+                                        padding: 5px 10px;
+                                        box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        
+                                }
+                            }
+                            .linse_JS{
+                                background: red;
+                            }
+                        }
+                    }
+                    
+
+                    .cont_description{
+                        width: 100%;
+                        padding: 3px 10px;
+                        //background: rgba(255, 255, 0, 0.103);
+                        .title{
+                            /*color: $color_letras2;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 100px;
+                            font-family: Bellefair;
+                            line-height: 100px;
+                            transition: 0.1s ease-in all;
+                            
+                            text-transform: uppercase;*/
+                        }
+                        
+                        .text{
+                            /*font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $color_letras;*/
+                        }
+                        .barra{
+                            /*width: 100%;
+                            height: 1px;
+                            border: none;
+                            background:white;
+                            opacity: 0.1;*/
+                        }
+                        .footer{
+                            /*width: 80%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content:space-between;
+                            align-items: flex-start;*/
+
+                            //background: red;
+                            margin: auto;
+                            .c1{
+                               /*width:120px;
+                               padding: 3px 0px;*/
+                            
+                               .titless{
+                                   /*font-size: 15px;
+                                   font-style: normal;
+                                   font-weight: normal;
+                                   color: $color_letras;*/
+                                  
+                               }
+                               .numbers{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                   
+                                    font-size: 20px;
+                                    letter-spacing: 1px;
+                                    color: $color_letras2;*/
+        
+                               }
+                            }
+                            .c2{
+                                /*width:120px;
+                                padding: 3px 0px;*/
+                               
+                                .titless{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 15px;
+                                    color: $color_letras;*/
+        
+                                }
+                                .numbers{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    letter-spacing: 1px;
+                                    color: $color_letras2;*/
+                                }
+                             }
+                             
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:640px){
+    .containerBased{
+        /*width: 100%;
+        max-width: 1440px;
+        height: 100vh;
+        margin: auto;*/
+        //padding: 10px 0px;
+        //background: #0c1f80;
+
+
+        width: 100%;
+        height: 100vh;
+        background: rgb(238, 10, 124);
+        padding: 10px 0px;
+        .containerd{
+            /*width: 100%;  
+            height:100%;
+            padding: 10px 0px;
+            background-image: url(../images/destination/background-destination-desktop.jpg);
+            background-size: 100% 100%;*/
+             
+            width: 100%;
+            height: 900px;
+            background-image: url(../images/destination/background-destination-mobile.jpg);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+
+            .bloqueNavd{
+                /*position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                top: 25px;
+                left: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.178);*/
+
+                //background-color: aqua;
+                .logod{
+                    width:40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrad{
+                    /*width: 400px;
+                    height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+                    display: none; 
+                    width: 100px;
+                }
+                .navEnlacesd{
+                    /*width: 600px;
+                    height: 50px;
+                    margin-right: 20px;
+                    object-fit: cover;*/
+
+                    width: 400px;
+                    background-color: aqua;
+                    display: none;
+                    .barra_uld{
+                        /*list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;*/
+                        
+                        .barra_lid{
+                            //background: brown;
+                            /*width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;*/
+                            
+                            a{
+                                /*text-decoration: none;
+                                color: $color_letras2;*/
+                            }
+                        }
+                    }
+                }
+                .btnResponsive{
+                    background: red;
+                    width: 50px;
+                    height: 50px;
+                    display: block;
+                    margin-right: 10px;
+                }
+            } 
+            
+            .cont_destino_description{
+                /*margin-top: 100px;
+                width: 90%;
+                padding: 10px 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;*/
+
+                //background: red;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                .cont_destinations{
+                    /*width: 400px;
+                    padding:10px 0px;*/
+
+                    //background: rgb(122, 104, 64);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .destination_title{
+                        //width: 300px;
+                        //background: yellow;
+                        .title{
+                            /*color:$color_letras2;
+                            font-family: Barlow Condensed;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 22px;
+                            line-height: 33.6px;
+                            letter-spacing: 4.72px;
+                            background-color: aqua;*/
+
+                            font-size: 15px;
+                            .ss{
+                                /*color: $color_letras3;
+                                line-height: 33.6px;
+                                letter-spacing: 4.72px;*/
+                            }
+                        }
+                    }
+            
+                    .destination_figure{
+                        /*width: 320px;
+                        height: 320px;
+                        margin-top: 20px;
+                        margin-left: 100px;*/
+                        width: 200px;
+                        height: 200px;
+                        //background: forestgreen;
+                        margin-left: 0;
+                        #imagenMoon{
+                            /*width: 100%;
+                            height: 100%;*/
+                        }
+                    }
+                }
+    
+                .destination_description{
+                    /*width: 400px;
+                    padding: 10px 0px;*/
+                    //background: grey;
+                    width: 100%;
+                    .menu{
+                        width: 100%;
+                        padding: 5px 0px;
+                        //background: rgba(199, 11, 11, 0.418);
+                        .ul{
+                            /*width: 100%;
+                            padding: 3px 0px;
+                            background: rgb(255, 0, 0);
+                            list-style: none;
+                            display: flex;
+                            flex-direction:row;
+                            justify-content: space-between;
+                            align-items: center;*/
+
+                            width:90%;
+                            margin: auto;
+                            //background: gold;
+                            .linse{
+                                //padding: 2px 15px;
+                                padding: 10px 0px;
+                                //background: rgb(42, 165, 48);
+                                .link{
+                                    /*text-decoration: none;
+                                    color: $color_letras;
+                                    letter-spacing: 2px;
+                                    font-size: 15px;
+                                    transition: 0.4s ease-in-out all;*/
+                                    //background: green;
+                                    .activa{
+                                        /*transition: 0.4s ease-in-out all;
+                                        width: 100px;
+                                        box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        padding: 5px 10px;*/
+                                    }
+                                    .activaJS
+                                    {
+                                        //padding: 5px 10px;
+                                        //box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        
+                                    } 
+                                }
+                                .activaJS{
+                                        padding: 5px 10px;
+                                        box-shadow: 0px 2px 0px 0px rgb(255, 255, 255);
+                                        
+                                }
+                            }
+                            .linse_JS{
+                                background: red;
+                            }
+                        }
+                    }
+                    
+
+                    .cont_description{
+                        width: 100%;
+                        padding: 3px 10px;
+                        //background: rgba(255, 255, 0, 0.103);
+                        .title{
+                            /*color: $color_letras2;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 100px;
+                            font-family: Bellefair;
+                            line-height: 100px;
+                            transition: 0.1s ease-in all;
+                            text-transform: uppercase;*/
+                            //background: gold;
+                            font-size: 75px;
+                        }
+                        
+                        .text{
+                            /*font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 28px;
+                            color: $color_letras;*/
+                        }
+                        .barra{
+                            /*width: 100%;
+                            height: 1px;
+                            border: none;
+                            background:white;
+                            opacity: 0.1;*/
+                        }
+                        .footer{
+                            /*width: 80%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content:space-between;
+                            align-items: flex-start;*/
+
+                            //background: red;
+                            margin: auto;
+                            .c1{
+                               /*width:120px;
+                               padding: 3px 0px;*/
+                            
+                               .titless{
+                                   /*font-size: 15px;
+                                   font-style: normal;
+                                   font-weight: normal;
+                                   color: $color_letras;*/
+                                  
+                               }
+                               .numbers{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                   
+                                    font-size: 20px;
+                                    letter-spacing: 1px;
+                                    color: $color_letras2;*/
+        
+                               }
+                            }
+                            .c2{
+                                /*width:120px;
+                                padding: 3px 0px;*/
+                               
+                                .titless{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 15px;
+                                    color: $color_letras;*/
+        
+                                }
+                                .numbers{
+                                    /*font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 20px;
+                                    letter-spacing: 1px;
+                                    color: $color_letras2;*/
+                                }
+                             }
+                             
+                        }
                     }
                 }
             }

@@ -68,6 +68,12 @@
                     }
                 }
             }
+            .btnResponsive{
+                width: 50px;
+                height: 50px;
+                background: forestgreen;
+                display: none;
+            }
         }
         
 
@@ -174,4 +180,435 @@
             }
         }   
     }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerBasec{
+        /*width: 100%;
+        max-width: 1440px;
+        height:100vh;
+        margin: auto;*/
+        padding: 10px 0px;
+        background: #1c3acebd;
+        .containerc{
+            /*width: 100%;
+            height:100%;
+            padding: 10px 0px;*/
+            background-image: url(../images/crew/background-crew-tablet.jpg);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 900px;
+            .bloqueNavc{
+                /*position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                left: 55px;
+                top: 25px;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;*/
+                //background: rgba(241, 4, 4, 0.178);
+                .logoc{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrac{
+                    width: 100px;
+                    /*height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+                }
+                .navEnlacesc{
+                    /*width: 600px;
+                    height: 50px;
+                    margin-right: 20px;*/
+
+                    //background: yellowgreen;
+                    width: 400px;
+                    .barra_ulc{
+                        list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        .barra_lic{
+                            //background: brown;
+                            width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;
+                            
+                            a{
+                                text-decoration: none;
+                                color: $color_letras2;
+                            }
+                        }
+                    }
+                }
+                .btnResponsive{
+                    width: 50px;
+                    height: 50px;
+                    background: forestgreen;
+                    display: none;
+                }
+            }
+            
+    
+    
+            .cont_bloques{
+                /*margin-top:100px;
+                width: 100%;
+                padding: 10px 0px;
+                */
+
+                //background: orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                .cont_secciones{
+                    /*width: 500px;
+                    padding: 10px 0px;*/
+
+                    //background: yellow;
+                    width: 100%;
+                    text-align: center;
+                    .bloque_Title{
+                        width: 300px;
+                        padding: 3px 0px;
+                        //background: brown;
+                        .title{
+                            /*color: white;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-family: Barlow Condensed;
+                            letter-spacing: 4.72px;*/
+
+                            //background-color: aqua;
+
+                            .pin{
+                               //color: $color_letras3;
+                            }
+                        }
+                    }
+            
+                    .bloque_Descrition{
+                        /*margin-top: 40px;
+                        width: 450px;
+                        padding: 3px 0px;*/
+
+
+                        //background: rgb(42, 120, 165);
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0px;
+                        .titleP{
+                            /*font-size: 25px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-family: Bellefair;
+                            color: $color_letras3;                               
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                            text-transform: uppercase;*/
+                        }
+                        .titleG{
+                            /*margin-top: 20px;
+                            font-family:Bellefair;
+                            font-size: 45px;
+                            font-weight: normal;
+                            font-style: normal;
+                            color:$color_letras2;
+                            text-transform: uppercase;*/
+                        }
+                        .parrafo{
+                            /*width: 320px;
+                            margin-top: 10px;
+                            font-family:Barlow;
+                            font-weight: normal;
+                            font-style: normal;
+                            color:$color_letras ;
+                            line-height: 26px;*/
+
+                            margin: auto;
+                            //background: violet;
+                        }
+                    }
+    
+                    .cursores_Puntuales{
+                        /*margin-top: 20px;
+                        width: 80px;
+                        padding: 3px 0px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;*/
+
+                        //background: rgb(10, 146, 146);
+                        margin: 10px auto;
+                        .punto{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background: $color_letras2;
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                        .punto:hover{
+                            box-shadow: 0px 0px 10px white;
+                            opacity: 1;
+                        }
+                    }
+                }
+    
+                .bloque_Image{
+                    width: 320px;
+                    height: 400px;
+                    //background: gray;
+                    margin: auto;
+                    #bloque_Image_img{
+                        /*width: 100%;
+                        height: 100%;*/
+                    }
+    
+                }
+            }   
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:640px){
+    .containerBasec{
+        /*width: 100%;
+        max-width: 1440px;
+        height:100vh;
+        margin: auto;*/
+        //padding: 10px 0px;
+        //background: #1cce2bbd;
+        .containerc{
+            /*width: 100%;
+            height:100%;
+            padding: 10px 0px;*/
+            background-image: url(../images/crew/background-crew-tablet.jpg);
+            background-size: 100% 100%;
+            width: 100%;
+            height: 900px;
+            .bloqueNavc{
+                /*position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                left: 55px;
+                top: 25px;
+                left: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;*/
+                //background: rgba(241, 4, 4, 0.178);
+                .logoc{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrac{
+                    width: 100px;
+                    /*height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+                    display: none;
+                }
+                .navEnlacesc{
+                    /*width: 600px;
+                    height: 50px;
+                    margin-right: 20px;*/
+
+                    background: yellowgreen;
+                    width: 400px;
+                    display: none;
+                    .barra_ulc{
+                        list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        .barra_lic{
+                            //background: brown;
+                            width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;
+                            
+                            a{
+                                text-decoration: none;
+                                color: $color_letras2;
+                            }
+                        }
+                    }
+                }
+
+                .btnResponsive{
+                    width: 40px;
+                    height: 40px;
+                    background: forestgreen;
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+            
+    
+    
+            .cont_bloques{
+                /*margin-top:100px;
+                width: 100%;
+                padding: 10px 0px;
+                */
+
+                //background: orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: flex-start;
+                .cont_secciones{
+                    /*width: 500px;
+                    padding: 10px 0px;*/
+                    //background: yellow;
+                    width: 100%;
+                    text-align: center;
+                    
+                    .bloque_Title{
+                        width: 300px;
+                        padding: 3px 0px;
+                        margin: auto;
+                        //background: brown;
+                        .title{
+                            /*color: white;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-family: Barlow Condensed;
+                            letter-spacing: 4.72px;*/
+
+                            //background-color: aqua;
+
+                            .pin{
+                               //color: $color_letras3;
+                            }
+                        }
+                    }
+            
+                    .bloque_Descrition{
+                        /*margin-top: 40px;
+                        width: 450px;
+                        padding: 3px 0px;*/
+
+
+                        //background: rgb(42, 120, 165);
+                        width: 100%;
+                        text-align: center;
+                        padding: 10px 0px;
+                        .titleP{
+                            /*font-size: 25px;
+                            font-weight: normal;
+                            font-style: normal;
+                            font-family: Bellefair;
+                            color: $color_letras3;                               
+                            mix-blend-mode: normal;
+                            opacity: 0.5;
+                            text-transform: uppercase;*/
+                            font-size: 20px;
+                        }
+                        .titleG{
+                            /*margin-top: 20px;
+                            font-family:Bellefair;
+                            font-size: 45px;
+                            font-weight: normal;
+                            font-style: normal;
+                            color:$color_letras2;
+                            text-transform: uppercase;*/
+                            font-size:30px ;
+                        }
+                        .parrafo{
+                            /*width: 320px;
+                            margin-top: 10px;
+                            font-family:Barlow;
+                            font-weight: normal;
+                            font-style: normal;
+                            color:$color_letras ;
+                            line-height: 26px;*/
+
+                            margin: auto;
+                            //background: violet;
+                            width: 95%;
+                        }
+                    }
+    
+                    .cursores_Puntuales{
+                        /*margin-top: 20px;
+                        width: 80px;
+                        padding: 3px 0px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;*/
+
+                        //background: rgb(10, 146, 146);
+                        margin: 10px auto;
+                        .punto{
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            background: $color_letras2;
+                            cursor: pointer;
+                            opacity: 0.5;
+                        }
+                        .punto:hover{
+                            box-shadow: 0px 0px 10px white;
+                            opacity: 1;
+                        }
+                    }
+                }
+    
+                .bloque_Image{
+                    width: 100%;
+                    padding: 5px 0px;
+                    margin-top: 20px;
+                    //background: gray;
+                    display: flex;
+                    justify-content: center;
+                    #bloque_Image_img{
+                        //background-color: aqua;
+                        width: 250px;
+                        height: 350px;
+                        
+                    }
+    
+                }
+            }   
+        }
+    }
+    
 }
