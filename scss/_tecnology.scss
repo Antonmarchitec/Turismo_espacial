@@ -68,6 +68,12 @@
                     }
                 }
             }
+            .bynResponsive{
+                width: 40px;
+                height: 40px;
+                background: fuchsia;
+                display: none;
+            }
         }   
         
         .titleF{
@@ -183,5 +189,413 @@ color: #D0D6F9;
         }
         
 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:641px) and (max-width:769px){
+    .containerBaset{
+        /*width: 100%;
+        max-width: 1440px;
+        height:100vh;
+        margin: auto;*/
+        //background: #031677;
+        //padding: 10px 0px;
+        .containert{
+            padding-top: 150px;
+            width: 100%;
+            height:100%;
+            background-image: url(../images/technology/background-technology-tablet.jpg);
+            background-size: 100% 100%;
+            //background: gold;
+            .bloqueNavt{
+                position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                //left: 55px;
+                top: 25px;
+                left: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.178);
+                .logot{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrat{
+                    width: 100px;
+                    /*height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+                }
+                .navEnlacest{
+                    width: 400px;
+                    height: 50px;
+                    //background: yellowgreen;
+                    margin-right: 20px;
+                    .barra_ult{
+                        list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        .barra_lit{
+                            //background: brown;
+                            width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;
+                            a{
+                                text-decoration: none;
+                                color: $color_letras2;
+                            }
+                        }
+                    }
+                }
+                .bynResponsive{
+                    width: 40px;
+                    height: 40px;
+                    background: fuchsia;
+                    display: none;
+                }
+            }   
+            
+            .titleF{
+                //background: red;
+                margin-left: 50px;
+
+                /*color:$color_letras2;
+                font-family: Barlow Condensed;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 33.6px;
+                letter-spacing: 4.72px; */
+                                     
+                .titleF_number3{
+                    /*color: $color_letras3;
+                    line-height: 33.6px;
+                    letter-spacing: 4.72px;*/
+                }
+            }
+            
+            .baseContains{
+                width: 100%;
+                padding: 10px 0px;
+                //background: greenyellow;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .contLanch{
+                    width: 100%;
+                    padding: 10px 0px;
+                    //background: forestgreen;
+                    margin-left:0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    .contLanch_numbers{
+                        width: 300px;
+                        margin: auto;
+                        //background: yellow;
+                        padding: 10px 0px;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        .contLanch_numbers_circle{
+                           width:55px;
+                           height:55px;
+                           border: 1px solid white;
+                           border-radius: 50%;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           font-size: 30px;
+                           transition: 0.3s ease-in-out all;
+                        }
+                        .contLanch_numbers_circle:hover{
+                            cursor: pointer;
+                            background: white;
+                            color: black;
+                        }
+        
+                    }
+                    .contLanch_vehicle{
+                        width: 400px;
+                        height: 250px;
+                        padding: 10px 0px;
+                        //background: gold;
+                        text-align: center;
+                        margin: 10px auto;
+                        .contLanch_vehicle_titleP{
+                            font-family: Barlow Condensed;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 2.7px;
+                            color: #D0D6F9;
+                        }
+                        .contLanch_vehicle_titleB{
+                            margin-top:10px;
+                            font-family: Bellefair;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 40px;
+                            line-height: 64px;
+                            color: #FFFFFF;
+    
+                        }
+                        .contLanch_vehicle_parrafo{
+                            margin-top: 10px;
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 28px;
+    
+                            /* or 178% */
+    
+    
+    color: #D0D6F9;
+                        }
+                    }
+                }
+        
+                .contLangImage{
+                    margin-top:10px;
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 0px;
+                    overflow: hidden;
+                    
+                }
+            }
+            
+    
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (min-width:320px) and (max-width:640px){
+    .containerBaset{
+        /*width: 100%;
+        max-width: 1440px;
+        height:100vh;
+        margin: auto;*/
+        //background: #03770d;
+        //padding: 10px 0px;
+        .containert{
+            padding-top: 150px;
+            width: 100%;
+            height:900px;
+            background-image: url(../images/technology/background-technology-mobile.jpg);
+            background-size: 100% 100%;
+            //background: gold;
+            .bloqueNavt{
+                position: absolute;
+                width: 100%;
+                padding: 5px 0px;
+                //left: 55px;
+                top: 25px;
+                left: 0px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: rgba(0, 0, 0, 0.178);
+                .logot{
+                    width: 40px;
+                    height: 40px;
+                    margin-left: 20px;
+                    //background: yellow;
+                }
+                .barrat{
+                    width: 100px;
+                    display: none;
+                    /*height: 1px;
+                    opacity: 0.5;
+                    border:none;
+                    background: rgba(255, 255, 255, 0.301);*/
+                }
+                .navEnlacest{
+                    width: 400px;
+                    height: 50px;
+                    background: yellowgreen;
+                    margin-right: 20px;
+                    display: none;
+                    .barra_ult{
+                        list-style:none ;
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        
+                        .barra_lit{
+                            //background: brown;
+                            width: 100px;
+                            text-align: center;
+                            color: white;
+                            padding-bottom: 10px;
+                            a{
+                                text-decoration: none;
+                                color: $color_letras2;
+                            }
+                        }
+                    }
+                }
+                .bynResponsive{
+                    width: 40px;
+                    height: 40px;
+                    background: fuchsia;
+                    display: block;
+                    margin-right: 10px;
+                }
+            }   
+            
+            .titleF{
+                //background: red;
+                margin:auto;
+                width: 90%;
+                text-align: center;
+
+                /*color:$color_letras2;
+                font-family: Barlow Condensed;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 33.6px;
+                letter-spacing: 4.72px; */
+                                     
+                .titleF_number3{
+                    /*color: $color_letras3;
+                    line-height: 33.6px;
+                    letter-spacing: 4.72px;*/
+                }
+            }
+            
+            .baseContains{
+                width: 100%;
+                padding: 10px 0px;
+                //background: greenyellow;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                .contLanch{
+                    width: 100%;
+                    padding: 10px 0px;
+                    //background: forestgreen;
+                    margin-left:0px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    .contLanch_numbers{
+                        width: 250px;
+                        margin: auto;
+                        //background: yellow;
+                        padding: 10px 0px;
+                        height: auto;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        align-items: center;
+                        .contLanch_numbers_circle{
+                           width:55px;
+                           height:55px;
+                           border: 1px solid white;
+                           border-radius: 50%;
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                           font-size: 30px;
+                           transition: 0.3s ease-in-out all;
+                        }
+                        .contLanch_numbers_circle:hover{
+                            cursor: pointer;
+                            background: white;
+                            color: black;
+                        }
+        
+                    }
+                    .contLanch_vehicle{
+                        width: 90%;
+                        height: auto;
+                        padding: 10px 0px;
+                        //background: gold;
+                        text-align: center;
+                        margin: 10px auto;
+                        .contLanch_vehicle_titleP{
+                            font-family: Barlow Condensed;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 16px;
+                            line-height: 19px;
+                            letter-spacing: 2.7px;
+                            color: #D0D6F9;
+                        }
+                        .contLanch_vehicle_titleB{
+                            margin-top:10px;
+                            font-family: Bellefair;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 40px;
+                            line-height: 64px;
+                            color: #FFFFFF;
+    
+                        }
+                        .contLanch_vehicle_parrafo{
+                            margin-top: 10px;
+                            font-family: Barlow;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 28px;
+    
+                            /* or 178% */
+    
+    
+    color: #D0D6F9;
+                        }
+                    }
+                }
+        
+                .contLangImage{
+                    margin-top:10px;
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 0px;
+                    overflow: hidden;
+                    
+                }
+            }
+            
+    
+        }
     }
 }
