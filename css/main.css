@@ -1167,6 +1167,7 @@
   background-image: url(../images/crew/background-crew-desktop.jpg);
   background-size: 100% 100%;
   padding: 10px 0px;
+  overflow: hidden;
 }
 .containerBasec .containerc .bloqueNavc {
   position: absolute;
@@ -1196,6 +1197,9 @@
   height: 50px;
   margin-right: 20px;
 }
+.containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre {
+  display: none;
+}
 .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc {
   list-style: none;
   margin-top: 15px;
@@ -1217,7 +1221,6 @@
 .containerBasec .containerc .bloqueNavc .btnResponsive {
   width: 50px;
   height: 50px;
-  background: forestgreen;
   display: none;
 }
 .containerBasec .containerc .cont_bloques {
@@ -1376,7 +1379,6 @@
   .containerBasec .containerc .bloqueNavc .btnResponsive {
     width: 50px;
     height: 50px;
-    background: forestgreen;
     display: none;
   }
   .containerBasec .containerc .cont_bloques {
@@ -1485,12 +1487,12 @@
   }
   .containerBasec .containerc {
     /*width: 100%;
-    height:100%;
-    padding: 10px 0px;*/
+    height:100%;*/
+    padding: 10px 0px;
     background-image: url(../images/crew/background-crew-tablet.jpg);
     background-size: 100% 100%;
     width: 100%;
-    height: 900px;
+    height: 800px;
   }
   .containerBasec .containerc .bloqueNavc {
     /*position: absolute;
@@ -1502,7 +1504,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;*/
-    top: 0;
+    background: rgba(0, 0, 0, 0.178);
+    top: 5px;
+    z-index: 1;
   }
   .containerBasec .containerc .bloqueNavc .logoc {
     width: 40px;
@@ -1520,20 +1524,24 @@
   .containerBasec .containerc .bloqueNavc .navEnlacesc {
     margin-top: 0px;
     width: 200px;
-    height: 850px;
+    height: 800px;
     padding: 20px 0px;
-    background-color: rgba(36, 36, 36, 0.192);
+    background-color: rgba(0, 0, 0, 0.192);
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -100%;
     backdrop-filter: blur(20px);
+    transition: 0.4s ease-in-out all;
+    overflow: hidden;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre {
-    width: 30px;
-    height: 30px;
-    background: #D0D6F9;
     position: absolute;
     right: 10px;
+    display: block;
+  }
+  .containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre .fa-xmark {
+    font-size: 40px;
+    cursor: pointer;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc {
     width: 100%;
@@ -1556,12 +1564,18 @@
     text-decoration: none;
     color: #FFFFFF;
   }
+  .containerBasec .containerc .bloqueNavc .navEnlacesc_JS {
+    right: -20px;
+  }
   .containerBasec .containerc .bloqueNavc .btnResponsive {
     width: 40px;
     height: 40px;
-    background: forestgreen;
     display: block;
     margin-right: 10px;
+  }
+  .containerBasec .containerc .bloqueNavc .btnResponsive .fa-bars {
+    font-size: 40px;
+    cursor: pointer;
   }
   .containerBasec .containerc .cont_bloques {
     /*margin-top:100px;
