@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600&display=swap');
 @import "variables";
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Barlow Condensed;
-    //background: rgba(95, 158, 160, 0.288);
+    font-family: 'Barlow Condensed', sans-serif;    //background: rgba(95, 158, 160, 0.288);
 }
 
 .containerBase{
@@ -121,7 +121,7 @@
                     left: 0.11%;
                     right: 15.67%;
                     top: calc(50% - 34px/2 - 174px);
-                   
+                    //background: red;
                     font-family: Barlow Condensed;
                     font-style: normal;
                     font-weight: normal;
@@ -140,6 +140,7 @@
                     font-style: normal;
                     font-weight: normal;
                     font-size: 138px;
+                    
                     //line-height: 172px;
                     /* identical to box height */
                     
