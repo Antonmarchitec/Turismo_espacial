@@ -61,6 +61,10 @@ const dataFech = async () =>{
                activarMenu()
            }else if(e.target.id === "btnCierre"){
                desactivarMenu()
+           }else if(e.target.id === "btnResponsive_dest"){
+               activarMenuDest()
+           }else if(e.target.id === "btnCierre_des"){
+               desactivarMenuDest()
            }
        })
 
@@ -253,3 +257,17 @@ const desactivarMenu = () =>{
     let navEnlaces = document.querySelector("#navEnlaces")
     navEnlaces.classList.remove("navEnlaces_JS")
 }
+
+
+const activarMenuDest = () =>{
+    let navEnlacesd_dest = document.querySelector("#navEnlacesd_dest")
+    navEnlacesd_dest.classList.toggle("navEnlacesd_JS")
+}
+
+
+const desactivarMenuDest = () =>{
+    let navEnlacesd_dest = document.querySelector("#navEnlacesd_dest")
+    navEnlacesd_dest.classList.remove("navEnlacesd_JS")
+}
+
+
