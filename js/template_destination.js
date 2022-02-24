@@ -69,6 +69,10 @@ const dataFech = async () =>{
                activarMenuCrew()
            }else if(e.target.id === "btnCierre_crew"){
                desactivarMenuCrew()
+           }else if(e.target.id === "btnResponsive_Tech"){
+               activarMenuTech()
+           }else if(e.target.id === "btnCierreTech"){
+               desactivarMenuTech()
            }
        })
 
@@ -284,4 +288,15 @@ const activarMenuCrew = () =>{
 const desactivarMenuCrew = () =>{
     let navEnlacesc_crew = document.querySelector("#navEnlacesc_crew")
     navEnlacesc_crew.classList.remove("navEnlacesc_JS")
+}
+
+
+const activarMenuTech = () =>{
+    let navEnlacest = document.querySelector("#navEnlacest")
+    navEnlacest.classList.toggle("navEnlacest_JS")
+}
+
+const desactivarMenuTech = () =>{
+    let navEnlacest = document.querySelector("#navEnlacest")
+    navEnlacest.classList.remove("navEnlacest_JS")
 }

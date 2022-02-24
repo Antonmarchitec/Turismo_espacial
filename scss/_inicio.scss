@@ -198,7 +198,7 @@
     .containerBase{
         //padding: 10px 0px;
         height: 900px;
-        background:forestgreen;
+        //background:forestgreen;
        .container{
           width: 100%;
           height: 100%;
@@ -361,6 +361,10 @@
                     position: absolute;
                     right: 10px;
                     display: block;
+                    .fa-xmark{
+                        font-size: 40px;
+                        cursor: pointer;
+                    }
                 }
 
                   .barra_ul{

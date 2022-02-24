@@ -162,7 +162,6 @@
 @media (min-width: 641px) and (max-width: 769px) {
   .containerBase {
     height: 900px;
-    background: forestgreen;
   }
   .containerBase .container {
     width: 100%;
@@ -299,6 +298,10 @@
     position: absolute;
     right: 10px;
     display: block;
+  }
+  .containerBase .container .bloqueNav .navEnlaces .btnCierre .fa-xmark {
+    font-size: 40px;
+    cursor: pointer;
   }
   .containerBase .container .bloqueNav .navEnlaces .barra_ul {
     width: 100%;
@@ -944,6 +947,7 @@
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd .btnCierre .fa-xmark {
     font-size: 40px;
+    cursor: pointer;
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld {
     width: 100%;
@@ -977,6 +981,7 @@
   }
   .containerBased .containerd .bloqueNavd .btnResponsive .iconResponsive {
     font-size: 40px;
+    cursor: pointer;
   }
   .containerBased .containerd .cont_destino_description {
     /*margin-top: 100px;
@@ -1167,7 +1172,6 @@
   background-image: url(../images/crew/background-crew-desktop.jpg);
   background-size: 100% 100%;
   padding: 10px 0px;
-  overflow: hidden;
 }
 .containerBasec .containerc .bloqueNavc {
   position: absolute;
@@ -1326,6 +1330,7 @@
     padding: 10px 0px;*/
     background-image: url(../images/crew/background-crew-tablet.jpg);
     background-size: 100% 100%;
+    background-attachment: fixed;
     width: 100%;
     height: 900px;
   }
@@ -1484,15 +1489,19 @@
     max-width: 1440px;
     height:100vh;
     margin: auto;*/
+    width: 100%;
+    height: 800px;
   }
   .containerBasec .containerc {
     /*width: 100%;
     height:100%;*/
+    width: 100%;
+    height: 800px;
     padding: 10px 0px;
     background-image: url(../images/crew/background-crew-tablet.jpg);
     background-size: 100% 100%;
-    width: 100%;
-    height: 800px;
+    background-attachment: fixed;
+    overflow: hidden;
   }
   .containerBasec .containerc .bloqueNavc {
     /*position: absolute;
@@ -1504,9 +1513,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;*/
-    background: rgba(0, 0, 0, 0.178);
-    top: 5px;
-    z-index: 1;
+    position: relative;
+    top: 0;
   }
   .containerBasec .containerc .bloqueNavc .logoc {
     width: 40px;
@@ -1514,29 +1522,24 @@
     margin-left: 20px;
   }
   .containerBasec .containerc .bloqueNavc .barrac {
-    width: 100px;
-    /*height: 1px;
-    opacity: 0.5;
-    border:none;
-    background: rgba(255, 255, 255, 0.301);*/
     display: none;
+    width: 100px;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc {
     margin-top: 0px;
     width: 200px;
-    height: 800px;
+    height: 850px;
     padding: 20px 0px;
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: rgba(14, 14, 14, 0.192);
     position: absolute;
     top: 0;
     right: -100%;
     backdrop-filter: blur(20px);
     transition: 0.4s ease-in-out all;
-    overflow: hidden;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre {
     position: absolute;
-    right: 10px;
+    right: 20px;
     display: block;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre .fa-xmark {
@@ -1582,6 +1585,7 @@
     width: 100%;
     padding: 10px 0px;
     */
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1700,6 +1704,7 @@
   height: 100%;
   background-image: url(../images/technology/background-technology-desktop.jpg);
   background-size: 100% 100%;
+  background-attachment: fixed;
 }
 .containerBaset .containert .bloqueNavt {
   position: absolute;
@@ -1724,10 +1729,25 @@
   border: none;
   background: rgba(255, 255, 255, 0.301);
 }
+.containerBaset .containert .bloqueNavt .bynResponsive {
+  display: none;
+}
+.containerBaset .containert .bloqueNavt .bynResponsive .fa-bars {
+  font-size: 40px;
+}
 .containerBaset .containert .bloqueNavt .navEnlacest {
   width: 600px;
   height: 50px;
   margin-right: 20px;
+}
+.containerBaset .containert .bloqueNavt .navEnlacest .btnCierre {
+  position: absolute;
+  right: 20px;
+  display: none;
+}
+.containerBaset .containert .bloqueNavt .navEnlacest .btnCierre .fa-xmark {
+  font-size: 40px;
+  cursor: pointer;
 }
 .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult {
   list-style: none;
@@ -1746,12 +1766,6 @@
 .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit a {
   text-decoration: none;
   color: #FFFFFF;
-}
-.containerBaset .containert .bloqueNavt .bynResponsive {
-  width: 40px;
-  height: 40px;
-  background: fuchsia;
-  display: none;
 }
 .containerBaset .containert .titleF {
   margin-left: 150px;
@@ -1888,6 +1902,12 @@
     border:none;
     background: rgba(255, 255, 255, 0.301);*/
   }
+  .containerBaset .containert .bloqueNavt .bynResponsive {
+    display: none;
+  }
+  .containerBaset .containert .bloqueNavt .bynResponsive .fa-bars {
+    font-size: 40px;
+  }
   .containerBaset .containert .bloqueNavt .navEnlacest {
     width: 400px;
     height: 50px;
@@ -1910,12 +1930,6 @@
   .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit a {
     text-decoration: none;
     color: #FFFFFF;
-  }
-  .containerBaset .containert .bloqueNavt .bynResponsive {
-    width: 40px;
-    height: 40px;
-    background: fuchsia;
-    display: none;
   }
   .containerBaset .containert .titleF {
     margin-left: 50px;
@@ -2024,24 +2038,21 @@
     max-width: 1440px;
     height:100vh;
     margin: auto;*/
+    width: 100%;
+    height: 1000px;
   }
   .containerBaset .containert {
-    padding-top: 150px;
+    padding-top: 5px;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     background-image: url(../images/technology/background-technology-mobile.jpg);
     background-size: 100% 100%;
+    overflow: hidden;
   }
   .containerBaset .containert .bloqueNavt {
-    position: absolute;
-    width: 100%;
-    padding: 5px 0px;
-    top: 25px;
-    left: 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.178);
+    position: relative;
+    top: 0;
+    margin-bottom: 70px;
   }
   .containerBaset .containert .bloqueNavt .logot {
     width: 40px;
@@ -2049,30 +2060,39 @@
     margin-left: 20px;
   }
   .containerBaset .containert .bloqueNavt .barrat {
-    width: 100px;
     display: none;
-    /*height: 1px;
-    opacity: 0.5;
-    border:none;
-    background: rgba(255, 255, 255, 0.301);*/
+    width: 100px;
+  }
+  .containerBaset .containert .bloqueNavt .bynResponsive {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-right: 10px;
+  }
+  .containerBaset .containert .bloqueNavt .bynResponsive .fa-bars {
+    font-size: 40px;
+    cursor: pointer;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest {
     margin-top: 0px;
     width: 200px;
-    height: 900px;
+    height: 990px;
     padding: 20px 0px;
-    background-color: rgba(36, 36, 36, 0.192);
+    background-color: rgba(14, 14, 14, 0.192);
     position: absolute;
     top: 0;
-    right: -20px;
+    right: -100%;
     backdrop-filter: blur(20px);
+    transition: 0.4s ease-in-out all;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest .btnCierre {
-    width: 30px;
-    height: 30px;
-    background: #D0D6F9;
     position: absolute;
-    right: 10px;
+    right: 20px;
+    display: block;
+  }
+  .containerBaset .containert .bloqueNavt .navEnlacest .btnCierre .fa-xmark {
+    font-size: 40px;
+    cursor: pointer;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult {
     width: 100%;
@@ -2095,12 +2115,8 @@
     text-decoration: none;
     color: #FFFFFF;
   }
-  .containerBaset .containert .bloqueNavt .bynResponsive {
-    width: 40px;
-    height: 40px;
-    background: fuchsia;
-    display: block;
-    margin-right: 10px;
+  .containerBaset .containert .bloqueNavt .navEnlacest_JS {
+    right: -20px;
   }
   .containerBaset .containert .titleF {
     margin: auto;
@@ -2120,6 +2136,7 @@
     letter-spacing: 4.72px;*/
   }
   .containerBaset .containert .baseContains {
+    margin-top: 30px;
     width: 100%;
     padding: 10px 0px;
     display: flex;
