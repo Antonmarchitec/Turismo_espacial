@@ -53,6 +53,17 @@
                 height: 50px;
                 //background: yellowgreen;
                 margin-right: 20px;
+                .btnCierre{
+                    width: 40px;
+                    height: 40px;
+                    //background: goldenrod;
+                    position: absolute;
+                    right: 10px;
+                    display: none;
+                    .fa-xmark{
+                        font-size: 40px;
+                    }
+                }
                 .barra_ul{
                     list-style:none ;
                     margin-top: 15px;
@@ -206,7 +217,21 @@
               }.navEnlaces{
                   width: 400px;
                   //background-color: aqua;
+                  .btnCierre{
+                    width: 40px;
+                    height: 40px;
+                    //background: goldenrod;
+                    position: absolute;
+                    right: 10px;
+                    display: none;
+                }
               }
+              .btnResponsive{
+                width: 50px;
+                height: 50px;
+                background: firebrick;
+                display: none;
+            }
           }
           
 
@@ -295,8 +320,8 @@
     .containerBase{
         //padding: 10px 0px;
         height: 700px;
-        background:rgb(22, 185, 214);
-        
+        //background:rgb(22, 185, 214);
+        //padding: 10px 0px;
        .container{
           width: 100%;
           height: 100%;
@@ -304,6 +329,8 @@
           background-size: 100% 100%;
           .bloqueNav{
               //background: gray;
+              position: relative;
+              top: 0;
               .logo{
                   width: 40px;
                   height: 40px;
@@ -314,23 +341,78 @@
                   width:130px;
                   display: none;
 
-              }.navEnlaces{
-                  width: 400px;
-                  //background-color: aqua;
-                  display: none;
               }
+              .navEnlaces{
+                  margin-top: 0px;
+                  width:200px;
+                  height: 700px;
+                  padding:20px 0px;
+                  background-color: rgba(36, 36, 36, 0.192);
+                  position: absolute;
+                  top: 0;
+                  right: -100%;
+                  backdrop-filter: blur(30px);
+                  transition: 0.4s ease-in-out all;
+                  .btnCierre{
+                    width: 40px;
+                    height: 40px;
+                    //background: goldenrod;
+                    position: absolute;
+                    right: 10px;
+                    display: block;
+                }
+
+                  .barra_ul{
+                    width: 100%;
+                    height: 300px;
+                    //list-style:none ;
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    //background-color:rgba(64, 235, 64, 0.644);
+                    .barra_li{
+                        //background: rgb(134, 148, 10);
+                        width: 100%;
+                        text-align: inherit;
+                        color: white;
+                        padding-bottom: 30px;
+                        margin-bottom: 2px;
+                        margin-left: 20px;
+                        //box-shadow: 0px 2px 0px white;
+                        
+                        a{
+                            text-decoration: none;
+                            color: $color_letras2;
+                            //background: blue;
+                            //box-shadow: 0px 2px 0px white;
+                            
+                        }
+                    } 
+                  }
+
+              }
+              .navEnlaces_JS{
+                  right: -20px;
+              } 
+
               .btnResponsive{
                 width: 50px;
                 height: 50px;
-                background: firebrick;
+                background: transparent;
                 display: block;
-                margin-right: 20px;
-            }
+                margin-right: 10px;
+                .iconResponsive{
+                    font-size: 40px;
+                    cursor: pointer;
+                }
+              }
           }
           
 
           .cont_ambos_elements{
-            margin-top: 120px;
+            margin-top: 50px;
             //background: red;
             display: flex;
             flex-direction: column;
@@ -409,10 +491,8 @@
                 }
             }
             
+          }
         }
-
-
-       }
     }
 }
 

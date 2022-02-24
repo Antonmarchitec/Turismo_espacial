@@ -12,7 +12,7 @@ let titan = document.querySelector("#titan")
 
 
 
-
+//let btnResponsive = document.querySelector("#btnResponsive")
 
 
 
@@ -57,6 +57,10 @@ const dataFech = async () =>{
                pintarSpaceport(data) 
            }else if(e.target.id === "circle3"){
                pintarCapsule(data)
+           }else if(e.target.id === "btnResponsive"){
+               activarMenu()
+           }else if(e.target.id === "btnCierre"){
+               desactivarMenu()
            }
        })
 
@@ -238,3 +242,14 @@ const pintarBarraTitan = ()=>{
 
 
 
+
+
+const activarMenu = () =>{
+    let navEnlaces = document.querySelector("#navEnlaces")
+    navEnlaces.classList.toggle("navEnlaces_JS")
+}
+
+const desactivarMenu = () =>{
+    let navEnlaces = document.querySelector("#navEnlaces")
+    navEnlaces.classList.remove("navEnlaces_JS")
+}

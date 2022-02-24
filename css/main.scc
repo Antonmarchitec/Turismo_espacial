@@ -45,17 +45,8 @@
 .containerBase .container .bloqueNav .navEnlaces {
   width: 600px;
   height: 50px;
+  background: yellowgreen;
   margin-right: 20px;
-}
-.containerBase .container .bloqueNav .navEnlaces .btnCierre {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  right: 10px;
-  display: none;
-}
-.containerBase .container .bloqueNav .navEnlaces .btnCierre .fa-xmark {
-  font-size: 40px;
 }
 .containerBase .container .bloqueNav .navEnlaces .barra_ul {
   list-style: none;
@@ -79,7 +70,7 @@
   width: 50px;
   height: 50px;
   background: firebrick;
-  display: none;
+  display: block;
 }
 .containerBase .container .cont_ambos_elements {
   margin-top: 100px;
@@ -176,19 +167,6 @@
   .containerBase .container .bloqueNav .navEnlaces {
     width: 400px;
   }
-  .containerBase .container .bloqueNav .navEnlaces .btnCierre {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    display: none;
-  }
-  .containerBase .container .bloqueNav .btnResponsive {
-    width: 50px;
-    height: 50px;
-    background: firebrick;
-    display: none;
-  }
   .containerBase .container .cont_ambos_elements {
     margin-top: 120px;
     display: flex;
@@ -256,16 +234,13 @@
 @media (min-width: 320px) and (max-width: 640px) {
   .containerBase {
     height: 700px;
+    background: #16b9d6;
   }
   .containerBase .container {
     width: 100%;
     height: 100%;
     background-image: url(../images/home/background-home-mobile.jpg);
     background-size: 100% 100%;
-  }
-  .containerBase .container .bloqueNav {
-    position: relative;
-    top: 0;
   }
   .containerBase .container .bloqueNav .logo {
     width: 40px;
@@ -277,61 +252,18 @@
     display: none;
   }
   .containerBase .container .bloqueNav .navEnlaces {
-    margin-top: 0px;
-    width: 200px;
-    height: 700px;
-    padding: 20px 0px;
-    background-color: rgba(36, 36, 36, 0.192);
-    position: absolute;
-    top: 0;
-    right: -100%;
-    backdrop-filter: blur(30px);
-    transition: 0.4s ease-in-out all;
-  }
-  .containerBase .container .bloqueNav .navEnlaces .btnCierre {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    right: 10px;
-    display: block;
-  }
-  .containerBase .container .bloqueNav .navEnlaces .barra_ul {
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .containerBase .container .bloqueNav .navEnlaces .barra_ul .barra_li {
-    width: 100%;
-    text-align: inherit;
-    color: white;
-    padding-bottom: 30px;
-    margin-bottom: 2px;
-    margin-left: 20px;
-  }
-  .containerBase .container .bloqueNav .navEnlaces .barra_ul .barra_li a {
-    text-decoration: none;
-    color: #FFFFFF;
-  }
-  .containerBase .container .bloqueNav .navEnlaces_JS {
-    right: -20px;
+    width: 400px;
+    display: none;
   }
   .containerBase .container .bloqueNav .btnResponsive {
     width: 50px;
     height: 50px;
-    background: transparent;
+    background: firebrick;
     display: block;
-    margin-right: 10px;
-  }
-  .containerBase .container .bloqueNav .btnResponsive .iconResponsive {
-    font-size: 40px;
-    cursor: pointer;
+    margin-right: 20px;
   }
   .containerBase .container .cont_ambos_elements {
-    margin-top: 50px;
+    margin-top: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -444,7 +376,7 @@
   width: 600px;
   height: 50px;
   margin-right: 20px;
-  backdrop-filter: blur(20px);
+  object-fit: cover;
 }
 .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld {
   list-style: none;
@@ -875,6 +807,8 @@
     margin: auto;*/
     width: 100%;
     height: 100vh;
+    background: #ee0a7c;
+    padding: 10px 0px;
   }
   .containerBased .containerd {
     /*width: 100%;  
@@ -889,8 +823,6 @@
     background-attachment: fixed;
   }
   .containerBased .containerd .bloqueNavd {
-    position: relative;
-    top: 0;
     /*position: absolute;
     width: 100%;
     padding: 5px 0px;
@@ -916,54 +848,38 @@
     width: 100px;
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd {
-    margin-top: 0px;
-    width: 200px;
-    height: 850px;
-    padding: 20px 0px;
-    background-color: rgba(128, 9, 9, 0.192);
-    position: absolute;
-    top: 0;
-    right: -20px;
-    backdrop-filter: blur(20px);
-    /*estos son los que sirven
+    /*width: 600px;
+    height: 50px;
+    margin-right: 20px;
+    object-fit: cover;*/
     width: 400px;
-    background-color: rgba(25, 240, 240, 0.979);
-    display: none;*/
-  }
-  .containerBased .containerd .bloqueNavd .navEnlacesd .btnCierre {
-    width: 30px;
-    height: 30px;
-    background: #D0D6F9;
-    position: absolute;
-    right: 10px;
+    background-color: aqua;
+    display: none;
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld {
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
+    /*list-style:none ;
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;*/
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld .barra_lid {
-    width: 100%;
-    text-align: inherit;
+    /*width: 100px;
+    text-align: center;
     color: white;
-    padding-bottom: 30px;
-    margin-bottom: 2px;
-    margin-left: 20px;
+    padding-bottom: 10px;*/
   }
   .containerBased .containerd .bloqueNavd .navEnlacesd .barra_uld .barra_lid a {
-    text-decoration: none;
-    color: #FFFFFF;
+    /*text-decoration: none;
+    color: $color_letras2;*/
   }
   .containerBased .containerd .bloqueNavd .btnResponsive {
+    background: red;
     width: 50px;
     height: 50px;
-    background: firebrick;
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   .containerBased .containerd .cont_destino_description {
     /*margin-top: 100px;
@@ -1302,6 +1218,8 @@
     max-width: 1440px;
     height:100vh;
     margin: auto;*/
+    padding: 10px 0px;
+    background: #1c3acebd;
   }
   .containerBasec .containerc {
     /*width: 100%;
@@ -1488,7 +1406,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;*/
-    top: 0;
   }
   .containerBasec .containerc .bloqueNavc .logoc {
     width: 40px;
@@ -1504,39 +1421,26 @@
     display: none;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc {
-    margin-top: 0px;
-    width: 200px;
-    height: 850px;
-    padding: 20px 0px;
-    background-color: rgba(36, 36, 36, 0.192);
-    position: absolute;
-    top: 0;
-    right: -20px;
-    backdrop-filter: blur(20px);
-  }
-  .containerBasec .containerc .bloqueNavc .navEnlacesc .btnCierre {
-    width: 30px;
-    height: 30px;
-    background: #D0D6F9;
-    position: absolute;
-    right: 10px;
+    /*width: 600px;
+    height: 50px;
+    margin-right: 20px;*/
+    background: yellowgreen;
+    width: 400px;
+    display: none;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc {
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
+    list-style: none;
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc .barra_lic {
-    width: 100%;
-    text-align: inherit;
+    width: 100px;
+    text-align: center;
     color: white;
-    padding-bottom: 30px;
-    margin-bottom: 2px;
-    margin-left: 20px;
+    padding-bottom: 10px;
   }
   .containerBasec .containerc .bloqueNavc .navEnlacesc .barra_ulc .barra_lic a {
     text-decoration: none;
@@ -2028,39 +1932,25 @@
     background: rgba(255, 255, 255, 0.301);*/
   }
   .containerBaset .containert .bloqueNavt .navEnlacest {
-    margin-top: 0px;
-    width: 200px;
-    height: 900px;
-    padding: 20px 0px;
-    background-color: rgba(36, 36, 36, 0.192);
-    position: absolute;
-    top: 0;
-    right: -20px;
-    backdrop-filter: blur(20px);
-  }
-  .containerBaset .containert .bloqueNavt .navEnlacest .btnCierre {
-    width: 30px;
-    height: 30px;
-    background: #D0D6F9;
-    position: absolute;
-    right: 10px;
+    width: 400px;
+    height: 50px;
+    background: yellowgreen;
+    margin-right: 20px;
+    display: none;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult {
-    width: 100%;
-    height: 300px;
-    margin-top: 50px;
+    list-style: none;
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit {
-    width: 100%;
-    text-align: inherit;
+    width: 100px;
+    text-align: center;
     color: white;
-    padding-bottom: 30px;
-    margin-bottom: 2px;
-    margin-left: 20px;
+    padding-bottom: 10px;
   }
   .containerBaset .containert .bloqueNavt .navEnlacest .barra_ult .barra_lit a {
     text-decoration: none;
@@ -2177,4 +2067,4 @@
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.scc.map */

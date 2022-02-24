@@ -45,7 +45,8 @@
                 height: 50px;
                 //background: yellowgreen;
                 margin-right: 20px;
-                object-fit: cover;
+                backdrop-filter: blur(20px);
+                
                 .barra_uld{
                     list-style:none ;
                     margin-top: 15px;
@@ -589,8 +590,8 @@
 
         width: 100%;
         height: 100vh;
-        background: rgb(238, 10, 124);
-        padding: 10px 0px;
+        //background: rgb(238, 10, 124);
+        //padding: 10px 0px;
         .containerd{
             /*width: 100%;  
             height:100%;
@@ -605,6 +606,11 @@
             background-attachment: fixed;
 
             .bloqueNavd{
+                //background: gray;
+                position: relative;
+                top: 0;
+
+
                 /*position: absolute;
                 width: 100%;
                 padding: 5px 0px;
@@ -614,13 +620,12 @@
                 justify-content: space-between;
                 align-items: center;
                 background: rgba(0, 0, 0, 0.178);*/
-
                 //background-color: aqua;
                 .logod{
-                    width:40px;
+                    width: 40px;
                     height: 40px;
+                    //background: gold;
                     margin-left: 20px;
-                    //background: yellow;
                 }
                 .barrad{
                     /*width: 400px;
@@ -632,42 +637,64 @@
                     width: 100px;
                 }
                 .navEnlacesd{
-                    /*width: 600px;
-                    height: 50px;
-                    margin-right: 20px;
-                    object-fit: cover;*/
-
+                  margin-top: 0px;
+                  width:200px;
+                  height: 850px;
+                  padding:20px 0px;
+                  background-color: rgba(128, 9, 9, 0.192);
+                  position: absolute;
+                  top: 0;
+                  right: -20px;
+                  backdrop-filter: blur(20px);
+                  
+                    /*estos son los que sirven
                     width: 400px;
-                    background-color: aqua;
-                    display: none;
+                    background-color: rgba(25, 240, 240, 0.979);
+                    display: none;*/
+                    .btnCierre{
+                        width: 30px;
+                        height: 30px;
+                        background: #D0D6F9;
+                        position: absolute;
+                        right: 10px;
+                    }
                     .barra_uld{
-                        /*list-style:none ;
-                        margin-top: 15px;
+                        width: 100%;
+                        height: 300px;
+                        //list-style:none ;
+                        margin-top: 50px;
                         display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        align-items: center;*/
-                        
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        //background-color:rgba(64, 235, 64, 0.644);
                         .barra_lid{
-                            //background: brown;
-                            /*width: 100px;
-                            text-align: center;
+                            //background: rgb(134, 148, 10);
+                            width: 100%;
+                            text-align: inherit;
                             color: white;
-                            padding-bottom: 10px;*/
+                            padding-bottom: 30px;
+                            margin-bottom: 2px;
+                            margin-left: 20px;
+                            //box-shadow: 0px 2px 0px white;
                             
                             a{
-                                /*text-decoration: none;
-                                color: $color_letras2;*/
+                                text-decoration: none;
+                                color: $color_letras2;
+                                //background: blue;
+                                //box-shadow: 0px 2px 0px white;
+                                
                             }
-                        }
+                        } 
                     }
+                    
                 }
                 .btnResponsive{
-                    background: red;
                     width: 50px;
                     height: 50px;
+                    background: firebrick;
                     display: block;
-                    margin-right: 10px;
+                    margin-right: 20px;
                 }
             } 
             
